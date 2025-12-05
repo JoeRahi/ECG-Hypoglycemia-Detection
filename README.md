@@ -51,15 +51,15 @@ The model is a **hybrid CNN-BiLSTM** network capturing both spatial and temporal
 
 ## Results
 
-| Metric       | Testing  | Training|
-|------------- |--------- |---------|
-| F1-Score     | 0.6938   | 0.6848  |
-| AUROC        | 0.9729   | -       |
-| AUPR         | 0.7530   | -       |
-| Precision    | 0.7244   | -       |
-| Recall       | 0.6890   | -       |
-| Specificity  | 0.9851   | -       |
-| Balanced Acc | 0.8370   | -       |
+| Metric       | Testing  | Validation|
+|------------- |--------- |-----------|
+| F1-Score     | 0.7063   | 0.6938    |
+| AUROC        | 0.9729   | -         |
+| AUPR         | 0.7530   | -         |
+| Precision    | 0.7244   | -         |
+| Recall       | 0.6890   | -         |
+| Specificity  | 0.9851   | -         |
+| Balanced Acc | 0.8370   | -         |
 
 The model demonstrates stable learning and generalization, successfully detecting hypoglycemic episodes despite dataset challenges.
 
