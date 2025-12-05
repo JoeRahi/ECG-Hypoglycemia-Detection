@@ -24,8 +24,6 @@ ECG signals offer a **non-invasive alternative**, as hypoglycemia triggers auton
 - **Class imbalance:** only ~5.4% of segments are hypoglycemic, making the dataset highly imbalanced  
 - **Challenges:** patient-specific variability, limited hypoglycemic events  
 
-Data split: train-test with patient-level stratification to avoid data leakage.
-
 ---
 
 ## Preprocessing
