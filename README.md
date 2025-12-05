@@ -21,7 +21,8 @@ ECG signals offer a **non-invasive alternative**, as hypoglycemia triggers auton
   - `0` → Normal (Normoglycemic)  
   - `1` → Hypoglycemic  
 - Each segment is labeled using CGM measurements synchronized with ECG recordings  
-- **Challenges:** Class imbalance, patient-specific variability, limited hypoglycemic events  
+- **Class imbalance:** only ~5.4% of segments are hypoglycemic, making the dataset highly imbalanced  
+- **Challenges:** patient-specific variability, limited hypoglycemic events  
 
 Data split: train-test with patient-level stratification to avoid data leakage.
 
@@ -30,7 +31,7 @@ Data split: train-test with patient-level stratification to avoid data leakage.
 ## Preprocessing
 
 - Removed unnecessary metadata and invalid segments  
-- Standardized ECG signals and clipped 
+- Standardized ECG signals and clipped  
 - Reshaped ECGs to `(2500,1)` for CNN input  
 - Handled class imbalance using oversampling, mixup augmentation, and class weighting  
 
@@ -65,4 +66,5 @@ The model is a **hybrid CNN-BiLSTM** network capturing both spatial and temporal
 The model demonstrates stable learning and generalization, successfully detecting hypoglycemic episodes despite dataset challenges.
 
 ---
+
 Licensed under MIT
